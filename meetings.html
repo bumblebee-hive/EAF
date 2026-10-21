@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meetings | EAF</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="meetings">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="page-hero">
+      <p class="eyebrow">PLAN TOGETHER</p>
+      <h1>Make the room.<br><span class="gradient-text">Bring your voice.</span></h1>
+      <p class="lede">
+        Keep meeting details, agendas and online meeting links organised.
+      </p>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">01 / MEETING SPACE</p>
+        <h2>Meet online. Stay connected.</h2>
+        <p class="section-copy">
+          Schedule a forum meeting and paste its Google Meet, Zoom
+          or Microsoft Teams invitation link.
+        </p>
+
+        <div class="notice">
+          <strong>How live meetings work</strong>
+          <p>
+            Your saved meeting link opens the external video-call service.
+            EAF does not host the audio or video itself.
+          </p>
+        </div>
+      </div>
+
+      <form id="meeting-form" class="form-panel">
+        <h3>Schedule a meeting</h3>
+
+        <label>Meeting title
+          <input name="title" required
+            placeholder="EAF weekly check-in">
+        </label>
+
+        <label>Date and time
+          <input name="date" type="datetime-local" required>
+        </label>
+
+        <label>Video-call URL
+          <input name="link" type="url" required
+            placeholder="https://meet.google.com/...">
+        </label>
+
+        <label>Meeting agenda
+          <textarea name="agenda" rows="5"
+            placeholder="1. Updates&#10;2. Upcoming events&#10;3. Next steps"></textarea>
+        </label>
+
+        <button type="submit" class="button button-primary">
+          Schedule meeting
+        </button>
+      </form>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">02 / YOUR SCHEDULE</p>
+      <h2>Meeting room schedule.</h2>
+      <br>
+      <div id="meeting-list" class="item-list"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>

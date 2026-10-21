@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Community Chat | EAF</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="chat">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="page-hero">
+      <p class="eyebrow">THE DIGITAL COMMON ROOM</p>
+      <h1>Say something.<br><span class="gradient-text">Start something.</span></h1>
+      <p class="lede">
+        A digital space for creative ideas, updates and conversation.
+      </p>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">01 / COMMUNITY CHAT</p>
+        <h2>Open conversation.</h2>
+        <p class="section-copy">
+          Introduce yourself, share an idea or start a discussion.
+        </p>
+
+        <div class="notice">
+          <strong>Prototype notice</strong>
+          <p>
+            These messages are saved in your browser only. A shared,
+            multi-user chat requires a backend and real-time messaging.
+          </p>
+        </div>
+
+        <br>
+        <button id="clear-chat" class="button button-outline">
+          Clear local messages
+        </button>
+      </div>
+
+      <div class="chat-panel">
+        <div class="chat-header">EAF Common Room · Local demo</div>
+
+        <div id="chat-messages" class="chat-messages"
+          aria-live="polite"></div>
+
+        <form id="chat-form" class="chat-compose">
+          <label for="chat-input" class="hidden">Your message</label>
+          <input id="chat-input" name="message" required maxlength="1000"
+            placeholder="Share an idea with the forum...">
+          <button type="submit" aria-label="Send message">↑</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>
+

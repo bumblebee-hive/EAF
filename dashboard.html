@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My EAF | Member Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="dashboard">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="page-hero">
+      <p class="eyebrow">YOUR SPACE / YOUR COMMUNITY</p>
+      <h1>Your creative<br><span class="gradient-text">corner.</span></h1>
+      <p class="lede">
+        Keep track of your profile and the activity recorded on this device.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="dashboard-grid">
+        <article class="dashboard-card">
+          <p class="eyebrow">YOUR PROFILE</p>
+          <div id="dashboard-profile">
+            Loading profile...
+          </div>
+          <br>
+          <a class="button button-primary" href="join.html">
+            Create / update profile
+          </a>
+        </article>
+
+        <article class="dashboard-card">
+          <p class="eyebrow">MEMBERS</p>
+          <div id="dashboard-members" class="dashboard-number">0</div>
+          <p class="section-copy">Profiles saved on this device.</p>
+          <br>
+          <a href="community.html" class="button button-outline">
+            Browse community
+          </a>
+        </article>
+
+        <article class="dashboard-card">
+          <p class="eyebrow">EVENTS</p>
+          <div id="dashboard-events" class="dashboard-number">0</div>
+          <p class="section-copy">Events in the local calendar.</p>
+          <br>
+          <a href="events.html" class="button button-outline">
+            View events
+          </a>
+        </article>
+
+        <article class="dashboard-card">
+          <p class="eyebrow">MEETINGS</p>
+          <div id="dashboard-meetings" class="dashboard-number">0</div>
+          <p class="section-copy">Meeting records saved locally.</p>
+          <br>
+          <a href="meetings.html" class="button button-outline">
+            View meetings
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="notice">
+        <strong>Development note</strong>
+        <p>
+          This dashboard is a prototype, not a secure account system.
+          Data is specific to the current browser. Do not store passwords
+          or confidential member information here.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>

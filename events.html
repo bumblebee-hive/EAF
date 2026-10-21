@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events | EAF</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="events">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="page-hero">
+      <p class="eyebrow">GATHER / LEARN / SHARE</p>
+      <h1>Good things happen<br><span class="gradient-text">when we meet.</span></h1>
+      <p class="lede">Discover gatherings, workshops, talks and showcases.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / THE CALENDAR</p>
+          <h2>Upcoming events.</h2>
+        </div>
+        <button id="toggle-event-form" class="button button-primary">
+          + Add an event
+        </button>
+      </div>
+
+      <form id="event-form" class="form-panel hidden">
+        <h3>Create an event</h3>
+
+        <div class="form-grid">
+          <label>Event title
+            <input name="title" required maxlength="100"
+              placeholder="Creative workshop">
+          </label>
+
+          <label>Date and time
+            <input name="date" type="datetime-local" required>
+          </label>
+
+          <label>Location or meeting URL
+            <input name="location" required
+              placeholder="Venue or https://...">
+          </label>
+
+          <label>Category
+            <select name="category">
+              <option>Gathering</option>
+              <option>Workshop</option>
+              <option>Showcase</option>
+              <option>Talk</option>
+              <option>Meeting</option>
+            </select>
+          </label>
+        </div>
+
+        <label>Description
+          <textarea name="description" rows="4"
+            placeholder="Tell people what to expect"></textarea>
+        </label>
+
+        <button type="submit" class="button button-primary">Save event</button>
+        <p class="small-note">
+          Events saved here are not automatically visible to other users.
+        </p>
+      </form>
+
+      <div id="event-list" class="item-list"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join EAF | Emergence Arts Forum</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="join">
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="page-hero">
+      <p class="eyebrow">COME AS YOU ARE</p>
+      <h1>There is room for<br><span class="gradient-text">your kind of art.</span></h1>
+      <p class="lede">
+        Introduce yourself and tell us about your creative practice.
+      </p>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">01 / YOUR PROFILE</p>
+        <h2>Put a face to the practice.</h2>
+        <p class="section-copy">
+          EAF welcomes people working across creative disciplines.
+          Your profile helps introduce you to the forum.
+        </p>
+      </div>
+
+      <form id="join-form" class="form-panel">
+        <h3>Create your profile</h3>
+
+        <div class="form-grid">
+          <label>Full name
+            <input name="name" required maxlength="80"
+              placeholder="Your full name">
+          </label>
+
+          <label>Email address
+            <input name="email" type="email" required
+              placeholder="you@example.com">
+          </label>
+
+          <label>Creative practice
+            <select name="practice" required>
+              <option value="">Choose your practice</option>
+              <option>Visual arts</option>
+              <option>Music and sound</option>
+              <option>Performance and theatre</option>
+              <option>Writing and ideas</option>
+              <option>Film and new media</option>
+              <option>Design and craft</option>
+              <option>Arts administration</option>
+              <option>Other / interdisciplinary</option>
+            </select>
+          </label>
+
+          <label>City or location
+            <input name="location" maxlength="100"
+              placeholder="Lagos, Nigeria">
+          </label>
+        </div>
+
+        <label>Tell us about your work
+          <textarea name="bio" rows="4" maxlength="600"
+            placeholder="What do you create or care about?"></textarea>
+        </label>
+
+        <label>
+          <input type="checkbox" required style="width:auto">
+          I agree to be contacted about EAF activities.
+        </label>
+
+        <button type="submit" class="button button-primary">
+          Create my profile ↗
+        </button>
+
+        <p class="small-note">
+          This demo saves your profile to this browser. It does not send
+          your details to the foundation.
+        </p>
+
+        <div id="join-success" class="notice hidden" role="status"></div>
+      </form>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>
